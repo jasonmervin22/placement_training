@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int dollar1 = sc.nextInt();
+        int cents1 = sc.nextInt();
+        int dollar2 = sc.nextInt();
+        int cents2 = sc.nextInt();
+        
+        int sum_dollars = dollar1 + dollar2;
+        int sum_cents = cents1 + cents2;
+        
+        if (sum_cents >= 100)
+        {
+            sum_dollars = sum_dollars + 1;
+            System.out.println(sum_dollars);
+            System.out.println(sum_cents%100);
+        }
+        else{
+            System.out.println(sum_dollars);
+            System.out.println(sum_cents);
+        }
+    }
+}
