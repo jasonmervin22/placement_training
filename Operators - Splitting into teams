@@ -1,0 +1,16 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        int div = sc.nextInt();
+        int each_team = num/div;
+        int rem = num%div;
+        
+        System.out.println("The number of friends in each team is "+each_team+" and left out is "+rem);
+
+    }
+}
